@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+    </nav> 
+    <h1>Contact us</h1>
+    <script>
+        function validate(){
+            var name = document.getElementById("name").value;
+            var Email = document.getElementById("Email").value;
+            var Contact_No = document.getElementById("Contact_No").value;
+            var Message = document.getElementById("Message").value;
+        
+            if(name == "")
+            {
+                alert("Please Enter the name");
+            }
+            else if(Email == "")
+            {
+                alert("Please Enter the email");
+            }
+            else if(Contact_No == "")
+            {
+                alert("Please Enter the Contact number");
+            }
+            else if(Message == "")
+            {
+                alert("Please write Message");
+            }
+            else
+            {
+                alert("Message send successfully!");
+            }
+        
+        }
+    </script>
+    <form>
+        <div class="container">
+            <div>
+                <form action="MAILTO:DonationCampaign@email.com">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                  <label for="email">Email</label>
+                  <input type="email" id="lname" name="email" placeholder="Your email..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                
+                  <label for="Message">Message/Query</label>
+                  <br>
+                  <textarea  name="Message" placeholder="Write Message or Query.."  cols ="103" rows="3"></textarea> 
+
+                  <input type="submit" value="Submit" class="btn" onclick="validate()">
+                </form>
+              </div>
+        </div>
+    </form>
+    <h1>Follow us on</h1>
+    <div class="icon">
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    </div>
+    <footer>
+        <p>Copyright © 2021 | All Rights Reserved. | Designed and Developed By Janhvi Deshmukh. </p>
+    </footer>
+</body>
+</html>
